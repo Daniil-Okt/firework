@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main class="page">
+        <div data-observ></div>
+        <div class="consultation">
+          <div class="consultation__container">
+            <div class="consultation__title" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+              <h2>
+                КОНСУЛЬТАЦИЯ
+              </h2>
+              <p>
+                Введите ваши данные 
+                <br/>для связи
+              </p>
+            </div>
+            <div class="consultation__form form" >
+              <form action="#" class="form__body" id="form-consultation">
+                <div class="form__item" data-aos="zoom-in" data-aos-duration="1000">
+                  <p class="form__error-text">Введите ваше имя</p>
+                  <label for="name" class="form__label">имя</label>
+                  <input type="text" id="name" name="name" class="form__input _req" placeholder="Ваше имя">
+                </div>
+                <div class="form__item"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50">
+                  <label for="surname" class="form__label">фамилия</label>
+                  <input type="text" id="surname" name="surname" class="form__input" placeholder="Ваша фамилия">
+                </div>
+                <div class="form__item"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="100">
+                  <p class="form__error-text">Укажите ваш номер</p>
+                  <label for="phone" class="form__label">телефон</label>
+                  <input type="text" id="phone" name="phone" class="form__input _req tel" placeholder="Номер телефона">
+                </div>
+                <div class="form__item"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="150">
+                  <p class="form__error-text">Укажите дату проведения мероприятия</p>
+                  <label for="data" class="form__label">дата вашего мероприятия</label>
+                  <input type="text" id="data" name="data" class="form__input _req data" placeholder="Дата мероприятия">
+                </div>
+                <div class="form__item"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                  <p class="form__error-text">Укажите место проведения мероприятия</p>
+                  <label for="place" class="form__label">место проведения мероприятия</label>
+                  <input type="text" id="place" name="place" class="form__input _req" placeholder="Место проведения">
+                </div>
+                <div class="form__item"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="210">
+                  <label for="inst" class="form__label">ваш инстаграмм</label>
+                  <input type="text" id="inst" name="inst" class="form__input" placeholder="Ник">
+                </div>
+                <div class="form__item"data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="220">
+                  <input type="checkbox" id="fontan" name="fontan"  value="Нужна установка холодных фонтанов" class="form__input-checkbox">
+                  <label for="fontan" class="form__label-checkbox">Нужна установка холодных фонтанов</label>
+                </div>
+                <div class="form__button-row">
+                  <button type="submit" class="form__button">отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+        <div class="popup-thanks _overlay-bg" data-popup="popup-thanks">
+          <div class="popup-thanks__body">
+            <div class="popup-thanks__button-close button-close">
+              <?xml version="1.0" ?><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}</style></defs><title/><g id="cross"><line class="cls-1" x1="7" x2="25" y1="7" y2="25"/><line class="cls-1" x1="7" x2="25" y1="25" y2="7"/></g></svg>
+            </div>
+            <div class="popup-thanks__title">
+              Ваши данные отправлены!
+            </div>
+            <p>
+              Мы скоро свяжемся с вами
+            </p>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    @@include('html/script.html', {})
+  </body>
+</html> 

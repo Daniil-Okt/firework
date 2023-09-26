@@ -1,0 +1,9 @@
+// Заголовки, общие БЄМ блоки и проче...
+input {
+    transition: all 0.3s ease  0s;
+}
+input._error {
+    
+    border-color: #f60000;
+    box-shadow: 1px 1px 1px 2px rgba(255, 0, 0, 0.25);
+}
